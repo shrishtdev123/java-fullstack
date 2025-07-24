@@ -3111,3 +3111,184 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2025-07-23 21:26:25,908 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-07-23 21:26:25,916 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
 2025-07-23 22:31:22,217 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-07-24 01:43:15,930 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.shrtist:springorm:0.0.1-SNAPSHOT @ C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\OrmmappingManytoOne\pom.xml.
+2025-07-24 01:43:18,177 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:43:18,223 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:43:21,364 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:43:21,384 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:57:10,802 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:57:10,817 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:57:28,756 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:57:28,770 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:57:41,748 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:57:41,764 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:58:49,332 [Worker-24: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.shrtist:springorm:0.0.1-SNAPSHOT @ C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\OrmmappingManytoOne\pom.xml.
+2025-07-24 01:58:52,603 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.8/micrometer-observation-1.14.8.pom
+2025-07-24 01:58:52,667 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.8/micrometer-observation-1.14.8.pom
+2025-07-24 01:58:52,995 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.8/micrometer-commons-1.14.8.pom
+2025-07-24 01:58:53,035 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.8/micrometer-commons-1.14.8.pom
+2025-07-24 01:58:53,433 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.pom
+2025-07-24 01:58:53,476 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.pom
+2025-07-24 01:58:53,554 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.16/slf4j-parent-2.0.16.pom
+2025-07-24 01:58:53,605 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.16/slf4j-parent-2.0.16.pom
+2025-07-24 01:58:53,661 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.16/slf4j-bom-2.0.16.pom
+2025-07-24 01:58:53,712 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-bom/2.0.16/slf4j-bom-2.0.16.pom
+2025-07-24 01:58:54,076 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.pom
+2025-07-24 01:58:54,118 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.pom
+2025-07-24 01:58:54,220 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.2/slf4j-parent-2.0.2.pom
+2025-07-24 01:58:54,279 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.2/slf4j-parent-2.0.2.pom
+2025-07-24 01:58:54,356 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.pom
+2025-07-24 01:58:54,403 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.pom
+2025-07-24 01:58:54,480 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.pom
+2025-07-24 01:58:54,508 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.pom
+2025-07-24 01:58:54,978 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.pom
+2025-07-24 01:58:55,030 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.pom
+2025-07-24 01:58:55,111 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/3.0.1/jakarta.xml.bind-api-parent-3.0.1.pom
+2025-07-24 01:58:55,157 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api-parent/3.0.1/jakarta.xml.bind-api-parent-3.0.1.pom
+2025-07-24 01:58:55,226 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.pom
+2025-07-24 01:58:55,266 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.pom
+2025-07-24 01:58:55,310 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/sun/activation/all/2.0.1/all-2.0.1.pom
+2025-07-24 01:58:55,358 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/sun/activation/all/2.0.1/all-2.0.1.pom
+2025-07-24 01:58:55,436 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.pom
+2025-07-24 01:58:55,639 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.pom
+2025-07-24 01:58:55,713 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.2.7/spring-core-6.2.7.pom
+2025-07-24 01:58:55,745 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.2.7/spring-core-6.2.7.pom
+2025-07-24 01:58:55,847 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.pom
+2025-07-24 01:58:55,915 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.pom
+2025-07-24 01:58:55,994 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.2.7/spring-context-6.2.7.pom
+2025-07-24 01:58:56,032 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.2.7/spring-context-6.2.7.pom
+2025-07-24 01:58:56,123 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.2.7/spring-aop-6.2.7.pom
+2025-07-24 01:58:56,165 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.2.7/spring-aop-6.2.7.pom
+2025-07-24 01:58:56,258 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.pom
+2025-07-24 01:58:56,296 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.pom
+2025-07-24 01:58:56,388 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.pom
+2025-07-24 01:58:56,427 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.pom
+2025-07-24 01:58:56,486 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.pom
+2025-07-24 01:58:56,519 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.pom
+2025-07-24 01:58:56,702 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-oxm/6.2.7/spring-oxm-6.2.7.pom
+2025-07-24 01:58:56,758 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-oxm/6.2.7/spring-oxm-6.2.7.pom
+2025-07-24 01:58:56,851 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-web/6.2.7/spring-web-6.2.7.pom
+2025-07-24 01:58:56,893 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-web/6.2.7/spring-web-6.2.7.pom
+2025-07-24 01:58:56,947 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/6.2.7/spring-webmvc-6.2.7.pom
+2025-07-24 01:58:56,985 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/6.2.7/spring-webmvc-6.2.7.pom
+2025-07-24 01:58:57,449 [Worker-24: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier  to /jpa/target/classes
+2025-07-24 01:58:57,919 [Worker-24: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier  to /jpa/target/classes
+2025-07-24 01:58:58,214 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar
+2025-07-24 01:58:58,260 [Worker-24: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar
+2025-07-24 01:58:58,289 [BasicRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar
+2025-07-24 01:58:58,409 [BasicRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.8/micrometer-commons-1.14.8.jar
+2025-07-24 01:58:58,409 [BasicRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.8/micrometer-observation-1.14.8.jar
+2025-07-24 01:58:58,509 [BasicRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.8/micrometer-commons-1.14.8.jar
+2025-07-24 01:58:58,528 [BasicRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.8/micrometer-observation-1.14.8.jar
+2025-07-24 01:58:58,979 [BasicRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar
+2025-07-24 01:58:59,885 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-07-24 01:58:59,895 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:59:00,491 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2-sources.jar
+2025-07-24 01:59:00,573 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2-sources.jar
+2025-07-24 01:59:00,615 [Worker-27: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.slf4j:slf4j-api:2.0.2
+2025-07-24 01:59:00,823 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1-sources.jar
+2025-07-24 01:59:01,929 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1-sources.jar
+2025-07-24 01:59:01,960 [Worker-27: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.aspectj:aspectjweaver:1.9.22.1
+2025-07-24 01:59:02,071 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.8/micrometer-observation-1.14.8-sources.jar
+2025-07-24 01:59:02,143 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-observation/1.14.8/micrometer-observation-1.14.8-sources.jar
+2025-07-24 01:59:02,159 [Worker-27: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-observation:1.14.8
+2025-07-24 01:59:02,285 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.8/micrometer-commons-1.14.8-sources.jar
+2025-07-24 01:59:02,345 [Worker-27: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-commons/1.14.8/micrometer-commons-1.14.8-sources.jar
+2025-07-24 01:59:02,375 [Worker-27: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-commons:1.14.8
+2025-07-24 01:59:03,857 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:59:03,878 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 01:59:06,478 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 01:59:06,497 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:14:28,597 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:14:28,611 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:14:42,035 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:14:42,045 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:20:18,319 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:20:18,327 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:20:45,154 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:20:45,168 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:20:48,759 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:20:48,771 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:21:03,459 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:21:03,963 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:21:04,557 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:23:24,276 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:23:24,290 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:23:44,259 [Worker-30: Launching HibernateExample (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:23:44,276 [Worker-30: Launching HibernateExample (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:23:45,152 [Worker-30: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:23:45,628 [Worker-30: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:23:46,050 [Worker-30: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:24:36,165 [Worker-28: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:24:36,637 [Worker-28: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:24:37,067 [Worker-28: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:25:07,939 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:25:07,966 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:25:39,855 [Worker-30: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:25:40,396 [Worker-30: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:25:40,837 [Worker-30: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:26:34,900 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:26:34,914 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:26:51,159 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:26:51,170 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:27:07,591 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:27:08,050 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:27:08,486 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:27:58,962 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:27:58,972 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:28:23,996 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:28:24,008 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:28:31,723 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:28:31,737 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:28:41,557 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:28:41,572 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:28:57,087 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:28:57,101 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:29:03,807 [Worker-26: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:29:04,258 [Worker-26: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:29:04,694 [Worker-26: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:29:26,986 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:29:27,012 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:29:38,265 [Worker-22: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:29:38,693 [Worker-22: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:29:39,184 [Worker-22: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:30:52,154 [Worker-26: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:30:52,519 [Worker-26: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:30:52,910 [Worker-26: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:32:08,541 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:32:08,560 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:32:20,375 [Worker-27: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:32:20,907 [Worker-27: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:32:21,431 [Worker-27: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:32:54,271 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:32:54,282 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:33:02,688 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:33:03,464 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:33:03,921 [Worker-20: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:33:41,388 [Worker-7: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:33:41,929 [Worker-7: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:33:42,458 [Worker-7: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:38:49,131 [Worker-23: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:38:49,544 [Worker-23: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:38:49,963 [Worker-23: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:40:58,267 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:40:58,279 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:41:03,529 [Worker-23: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:41:03,958 [Worker-23: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:41:04,324 [Worker-23: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:41:43,525 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:41:43,537 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:41:50,919 [Worker-36: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:41:51,397 [Worker-36: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:41:51,839 [Worker-36: Launching HibernateExample (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/jpa: com.example:jpa:0.0.1-SNAPSHOT with classifier null to /jpa/target/classes
+2025-07-24 02:43:09,775 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:43:09,786 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 02:46:45,327 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-07-24 02:46:45,342 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-07-24 09:22:36,753 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-07-24 09:22:52,242 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IEditorMarkerService
+2025-07-24 09:22:52,309 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IEditorMarkerService
+2025-07-24 09:22:52,315 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IEditorMarkerService
+2025-07-24 09:22:52,323 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IEditorMarkerService
+2025-07-24 09:22:52,332 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.markers.MarkerUtils - Could not find OSGI service for org.eclipse.m2e.core.internal.markers.IEditorMarkerService
+2025-07-24 09:22:53,224 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.shrtist:springorm:0.0.1-SNAPSHOT @ C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\OrmmappingManytoOne\pom.xml.
