@@ -1,0 +1,29 @@
+package com.hcl.aop.loging;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AspectLoging {
+
+
+	
+	  @Before("execution(* com.hcl.aop..*(..))")
+	  public void commonLog1() {
+		  
+		  System.out.println("Common log before");
+		  
+	  }
+	 
+	  @After("execution(* com.hcl.aop..*(..))")
+	  public void commonLog2() {
+		  
+		  System.out.println("Common log after");
+		  
+	  }
+	 
+
+}

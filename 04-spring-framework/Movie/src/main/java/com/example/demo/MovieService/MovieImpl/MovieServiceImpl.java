@@ -1,0 +1,104 @@
+package com.example.demo.MovieService.MovieImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Component;
+
+import com.example.demo.Movie.Movie;
+import com.example.demo.MovieService.MovieService;
+
+@Component
+public class MovieServiceImpl implements MovieService {
+	
+	  
+	 List<Movie> data=new ArrayList<>();
+	 
+	  public MovieServiceImpl() {
+		  
+		Movie m=new Movie(1,"Saiyara",4.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		Movie m2=new Movie(2,"squide game",4.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		Movie m3=new Movie(3,"Kill",3.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		Movie m4=new Movie(4,"squide game2",2.5,"good","dev","dev","bddf","www.dev.in","image.com");
+			     data.add(m);
+			     data.add(m2);
+			     data.add(m3);
+			     data.add(m4);
+	  }
+	@Override
+	public Movie addMovie(Movie movie) {
+		
+		 Movie m=new Movie(1,"Saiyara",4.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		return m;
+	}
+
+	@Override
+	public List<Movie> getAllMovie() {
+		
+		return data;
+	}
+
+	@Override
+	public Movie getMovieById(int id) {
+		
+		    for(Movie m:data) {
+		    	  
+		    	  if(m.getId()==id) {
+		    		  
+		    		  return m;
+		    		
+		    	  }
+		    }
+		
+		return null;
+	}
+
+	@Override
+	public void deleteMovieById(int id) {
+		
+		
+		  data=data.stream().filter(obj->obj.getId()!=id).collect(Collectors.toList());
+		
+	}
+	@Override
+	public List<Movie> getMovieByrating(double rating) 
+	{
+		 
+		 data=data.stream().filter(obj->obj.getRating()>rating).collect(Collectors.toList());
+		
+		return data;
+	}
+	@Override
+	public Movie getMovieByName(String name) {
+		// TODO Auto-generated method stub
+		 List<Movie> movie=data.stream().filter(obj->obj.getMoviName().equalsIgnoreCase(name)).collect(Collectors.toList());
+		return movie.get(0);
+		
+		
+	}
+	@Override
+	public void updateMovie(int id,Movie movie) {
+		// TODO Auto-generated method stub
+		
+		    for(Movie m:data) {
+		    	
+		    	 if(m.getId()==id) {
+		    		 
+		    		 m.setMoviName(movie.getMoviName());
+		    		 m.setDescription(movie.getDescription());
+		    		 m.setDirector(movie.getDirector());
+		    		 m.setHero(movie.getHero());
+		    		 m.setHeroen(movie.getHeroen());
+		    		 m.setLink(movie.getLink());
+		    		 m.setPoster(movie.getPoster());
+		    		 m.setRating(movie.getRating());
+		    	 }
+		    }
+		
+		
+	}
+
+	
+
+}

@@ -1,0 +1,29 @@
+package com.hcl.SpringDi;
+
+import com.hcl.setter.Address;
+import com.hcl.setter.Employee;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        
+        Address a=new Address();
+          a.setAddressLine1("Noida");
+          a.setCity("greater noida");
+          a.setCountry("india");
+          a.setState("up");
+          
+          System.out.println(a);
+          
+          Employee e1=new Employee();
+    }
+}
+
+
+

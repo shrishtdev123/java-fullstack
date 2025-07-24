@@ -1,0 +1,65 @@
+package com.example.demo.MovieService.MovieImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.example.demo.Movie.Movie;
+import com.example.demo.MovieService.MovieService;
+
+@Component
+public class MovieServiceImpl implements MovieService {
+	
+	  
+	 List<Movie> data=new ArrayList<>();
+	@Override
+	public Movie addMovie(Movie movie) {
+		
+		 Movie m=new Movie(1,"Saiyara",4.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		return m;
+	}
+
+	@Override
+	public List<Movie> getAllMovie() {
+		
+		
+		 Movie m=new Movie(1,"Saiyara",4.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		 Movie m2=new Movie(2,"squide game",4.5,"good","dev","dev","bddf","www.dev.in","image.com");
+		     data.add(m);
+		     data.add(m2);
+		return data;
+	}
+
+	@Override
+	public Movie getMovieById(int id) {
+		
+		    for(Movie m:data) {
+		    	  
+		    	  if(m.getId()==id) {
+		    		  
+		    		  return m;
+		    		
+		    	  }
+		    }
+		
+		return null;
+	}
+
+	@Override
+	public void deleteMovieById(int id) {
+		// TODO Auto-generated method stub
+		
+		 for(Movie m:data) {
+			 
+			   if(m.getId()==id) {
+				   data.remove(id);
+				  
+			   }
+		 }
+		
+	}
+
+	
+
+}

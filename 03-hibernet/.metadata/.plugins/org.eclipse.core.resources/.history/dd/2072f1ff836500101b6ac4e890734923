@@ -1,0 +1,15 @@
+package com.example.demo.MovieService;
+
+import java.util.List;
+
+import com.example.demo.Movie.Movie;
+
+public interface MovieService {
+
+	  
+	   Movie addMovie(Movie movie);
+	   List<Movie> getAllMovie();
+	   Movie getMovieById(int id);
+	   
+	
+}

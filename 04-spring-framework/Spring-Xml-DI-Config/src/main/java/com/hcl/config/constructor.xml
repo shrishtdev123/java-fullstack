@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    
+       <bean id="product" class="com.hcl.constructor.Product">
+         
+            <constructor-arg name="id" value="1"/>
+            <constructor-arg name="name" value="mobile"/>
+             <constructor-arg name="price" value="150"/>
+       </bean>
+       
+       <bean id="user" class="com.hcl.constructor.User">
+         
+            <constructor-arg name="uid" value="2"/>
+            <constructor-arg name="name" value="shrishtdev"/>
+             <constructor-arg name="product" ref="product"/>
+       </bean>
+
+</beans>

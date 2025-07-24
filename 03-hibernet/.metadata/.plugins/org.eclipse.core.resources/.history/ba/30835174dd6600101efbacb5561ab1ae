@@ -1,0 +1,33 @@
+package com.example.demo.userservice.userServiceImpl;
+
+import java.util.List;
+
+import com.example.demo.user.User;
+import com.example.demo.userRepository.UserRepository;
+import com.example.demo.userservice.Userservice;
+
+public class UserserviceImpl implements Userservice{
+
+	
+	  private  UserRepository userRepository ;
+	  
+	  public UserserviceImpl(UserRepository userRepository) {
+		  this.userRepository=userRepository;
+	  }
+	  
+	@Override
+	public User addUser(User user) {
+		
+		
+		return userRepository.save(user);
+		
+		 
+	}
+
+	@Override
+	public List<User> getAlluser() {
+		
+		 return userRepository.findAll();
+	}
+
+}

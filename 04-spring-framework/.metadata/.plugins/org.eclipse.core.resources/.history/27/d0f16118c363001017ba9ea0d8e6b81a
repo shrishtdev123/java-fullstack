@@ -1,0 +1,28 @@
+package com.hcl.annotions;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan
+public class AppConfig {
+
+	
+	  @Bean
+	  public Movie Movie() {
+		  
+		  
+		  Movie m=new Movie();
+		  
+		   m.setName("squide game");
+		   m.setRating(4.5);
+		   m.setImage("imagfe");
+		   
+		 
+		  return m;
+		  
+		  
+	  }
+	
+}

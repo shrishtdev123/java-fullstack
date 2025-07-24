@@ -1,0 +1,104 @@
+package com.shrtist.menu;
+
+import java.util.List;
+import java.util.Scanner;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.shrtist.Address;
+import com.shrtist.Employee;
+import com.shrtist.userService.UserService;
+
+public class MenuDriver {
+	
+	
+	  public static void Run(Session session,SessionFactory factory,Transaction tx) {
+		  
+		    Scanner sc=new Scanner(System.in);
+		  while(true) {
+	        	 
+        	  System.out.println("1.Add Employee ");
+        	  System.out.println("2.Get The Employee By Id");
+        	  System.out.println("3.Update the Employee By Id");
+        	  System.out.println("4.Delete Employee By Id");
+        	  System.out.println("5.Get All Users");
+        	  System.out.println("6.Quite");
+        	  
+        	  System.out.println("Enter your choice");
+        	  int ch=sc.nextInt();
+        	  
+        	  if(ch==1) {
+        		  Employee emp = new Employee();
+        		  
+        		     System.out.println("Enter Emp Id");
+        		     int Empid=sc.nextInt();
+        	         emp.setId(Empid);
+        	         System.out.println("Enter the Name of Emp");
+        	         String Firstname=sc.next();
+        	         emp.setFirstName(Firstname);
+        	         System.out.println("Enter lastName");
+        	         String lastName=sc.next();
+        	         emp.setLastName(lastName);
+        	         
+        	         Address address=new Address(1L,"Noida","221508","UP");
+        	       
+        	         emp.setAddress(address);
+        	        session.save(emp);
+                    tx.commit();
+        	        System.out.println("Employee Added successfully...");
+        	         
+        	  }
+        	  else if(ch==2) 
+        	  {
+        		      System.out.println("Enter the employee id");
+        	          int id=sc.nextInt();
+        	          Employee employee=UserService.getuser(session,factory,id);
+        	          System.out.println(employee);
+        		  
+        	  }
+        	  else if(ch==3) {
+        		  
+        		  System.out.println("======Enter the employee id======");
+    	          int id=sc.nextInt();
+    	          Employee employee=UserService.getuser(session,factory,id);
+    	          System.out.println("Enter first name");
+    	          String firstName=sc.next();
+    	          employee.setFirstName(firstName);
+    	          System.out.println("Enter the LastName");
+    	          String lastName=sc.next();
+    	          employee.setLastName(lastName);
+    	          session.update(employee);
+    	          tx.commit();
+    	          System.out.println("============Employee updated successfully...==================");
+        	  }
+        	  else if(ch==4) {
+        		  
+        		  System.out.println("Enter the employee id");
+    	          int id=sc.nextInt();
+    	          Employee employee=UserService.getuser(session,factory,id);
+    	          session.delete(employee);
+    	          tx.commit();
+    	          System.out.println("===============Emplyoee with id:"+id+" is deleted successfuly.....=================");
+        		  
+        	  }
+        	  else if(ch==5) {
+        		  
+        		  
+        		     List<Employee> data=session.createQuery("FROM Employee",Employee.class).list();
+        		     System.out.println("============All The Employees...=============");
+        		     System.out.println(data);
+        		     tx.commit();
+        	  }
+        	  else if(ch==6) 
+        	  {
+        		   System.out.println("================Thank You For Using Application====================");
+        		  break;
+        		  
+        	  }
+         }
+		     
+	  }
+
+}

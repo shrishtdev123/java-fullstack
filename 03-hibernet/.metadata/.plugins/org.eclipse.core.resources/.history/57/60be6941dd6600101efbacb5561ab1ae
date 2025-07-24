@@ -1,0 +1,47 @@
+package com.example.demo.usercontroller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.user.User;
+import com.example.demo.userservice.Userservice;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PostMapping;
+
+
+
+@RestController
+@RequestMapping("/api/v1")
+public class Usercontroller {
+
+	  private Userservice userservice;
+	  
+	  
+	
+	 public Usercontroller(Userservice userservice) {
+		this.userservice = userservice;
+	}
+
+
+
+	@PostMapping("/user")
+	public User getUser(@RequestBody User user) {
+		
+		 return userservice.addUser(user);
+		 
+		
+	}
+	
+	// route to get all user
+	
+	@GetMapping("/user")
+	public List<User> getAlluser(){
+		
+		  return userservice.getAlluser();
+	}
+	
+	
+}

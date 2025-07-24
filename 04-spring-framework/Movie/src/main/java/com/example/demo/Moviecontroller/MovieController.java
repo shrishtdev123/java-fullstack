@@ -1,0 +1,93 @@
+package com.example.demo.Moviecontroller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Movie.Movie;
+import com.example.demo.MovieService.MovieService;
+
+@CrossOrigin(origins="http://localhost:5173")
+@RestController
+@RequestMapping("/api/v1")
+public class MovieController {
+	
+	
+	
+	  private MovieService movieService;
+	  // addMovie
+	  
+	  public MovieController(MovieService movieService) {
+		   this.movieService=movieService;
+	  }
+	
+	 @GetMapping("/getMovie")
+	 public List<Movie> addMovie() {
+		 
+		   List<Movie> m=movieService.getAllMovie();
+		  
+		  return m;
+	 }
+	 
+	 // getMovie by id
+	 
+	 @GetMapping("/getMovieById/{id}")
+	 
+	 public Movie getMovieByid(@PathVariable int id) {
+		  System.out.println(id);
+		  
+		 Movie m=movieService.getMovieById(id);
+		 System.out.println(m);
+		  
+		return m;
+	 }
+	 
+	 //delete movie by id
+	 
+	  @DeleteMapping("/deleteById/{id}")
+	 public String deleteMovieById(@PathVariable int id) {
+		 
+		  movieService.deleteMovieById(id);
+		  
+		  return "movie is deleted";
+	 }
+
+	  // get Movie by rating 
+	  
+	  @GetMapping("/getMovieByrating/{rating}")
+	  public List<Movie> getMovieByrating(@PathVariable double rating){
+		  
+		   return  movieService.getMovieByrating(rating);
+	  }
+	  
+	  // getMovie by name
+	  
+	  @GetMapping("/getMovieByName")
+	  
+	  public Movie getMovieByName(@RequestParam String name) {
+		  
+		  
+		  return movieService.getMovieByName(name);
+	  }
+	  
+	  // update movie by id
+	  
+	   @PostMapping("/updateMovie/{id}")
+	  public String updateMovie(@PathVariable int id,@RequestBody Movie movie) {
+		  
+		  
+		  movieService.updateMovie(id, movie);
+		     
+		  return "movie updated successfully";
+	  }
+	  
+	  
+}
