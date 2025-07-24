@@ -1,0 +1,16 @@
+package com.hcl.Inheritance;
+
+public class Test {
+
+	   
+	     public static void main(String[] args) {
+			
+	    	   NRIAccount a1=new NRIAccount(200);
+	    	       a1.depositeMoney();
+		}
+	    
+	    
+}
+
+
+

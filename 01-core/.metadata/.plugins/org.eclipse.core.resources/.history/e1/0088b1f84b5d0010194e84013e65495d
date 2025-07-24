@@ -1,0 +1,17 @@
+package com.hcl.Inheritance;
+
+public class SeniorCitzen extends BankAccount {
+
+	public SeniorCitzen(double withdrawAmount, double depositeAmount, double intrestRate, double balance) {
+		super(withdrawAmount, depositeAmount, intrestRate, balance);
+	}
+	
+	
+	public void applyFixedDeposite() {
+		
+		    this.intrestRate=6.5;
+	}
+
+	
+	      
+}

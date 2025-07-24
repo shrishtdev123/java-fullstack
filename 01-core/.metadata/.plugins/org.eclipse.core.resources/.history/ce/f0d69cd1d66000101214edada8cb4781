@@ -1,0 +1,40 @@
+package com.hcl.batting;
+
+import java.util.List;
+
+public class Players {
+ 
+	   List<Integer> scoreList;
+
+	public List<Integer> getScoreList() {
+		return scoreList;
+	}
+
+	public void setScoreList(List<Integer> scoreList) {
+		this.scoreList = scoreList;
+	}
+	   
+	   
+	public void addScoreDetials(int runSocred) {
+		
+		scoreList.add(runSocred);		     
+	}
+	
+	public double getAvarageRunScored() {
+		
+		     if(scoreList.size()==0) {
+		    	 return 0;
+		     }
+		     else {
+		    	 
+		    	 double ans=0;
+		    	 
+		    	 for(int a:scoreList) {
+		    		 
+		    		   ans+=a;
+		    	 }
+		    	 
+		    	 ans=ans/scoreList.size();
+		     }
+	}
+}

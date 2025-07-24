@@ -1,0 +1,56 @@
+package com.hcl.smallest;
+
+public class test {
+	
+	  
+	    public static void main(String[] args) {
+			
+	    	  int[] arr= {4,3,2,10,8,6};
+	    	  int n=arr.length;
+	    	  int max=0;
+	    	  int first=0;
+	    	  int second=0;
+	    	  int Findex=1;
+	    	  int Lindex=-1;
+	    	  
+	    	  
+	    	   if(n<5 &&n>10) {
+	    		   
+	    		   System.out.println("Invalide size array");
+	    	   }
+	    	  
+	    	   for(int i=0;i<n-2;i++) {
+	    		   
+	    		     int ans=Math.abs(arr[i]-arr[i+2]);
+	    		     
+	    		   
+	    		     if(ans>max) {
+	    		    	  max=ans;
+	    		    	  first=arr[i];
+	 	    		      second=arr[i+2];
+	 	    		      Findex=i;
+	 	    		      Lindex=i+2;
+	    		     }
+	    		     
+	    	   }
+	    	   
+	    	   if(first<second) {
+	    		    System.out.println(Findex);
+	    	   }
+	    	   else {
+	    		   System.out.println(Lindex);
+	    	   }
+		}
+
+}
+
+
+
+//class pair{
+//	
+//	
+//	  int index;
+//	  int firstnumber;
+//	  int secondnumber;
+//	  
+//}

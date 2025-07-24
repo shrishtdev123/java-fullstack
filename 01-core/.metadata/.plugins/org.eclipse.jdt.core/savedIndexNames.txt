@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\01-core\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1755401707.index
+4175286478.index
+1120431362.index
+556223278.index

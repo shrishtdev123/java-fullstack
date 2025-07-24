@@ -1,0 +1,43 @@
+package com.hcl.adversitment;
+
+public class Adversitment {
+	
+	    int adversitmentId;
+	    String priority;
+	    int noOfDays;
+	    String clientName;
+		public Adversitment(int adversitmentId, String priority, int noOfDays, String clientName) 
+		{
+			super();
+			this.adversitmentId = adversitmentId;
+			this.priority = priority;
+			this.noOfDays = noOfDays;
+			this.clientName = clientName;
+		}
+		
+		public String getName() {
+			return clientName;
+		}
+	    
+
+}
+
+class videoAdverstiemnt extends Adversitment{
+	
+	   int duration;
+
+	  public videoAdverstiemnt(int adversitmentId, String priority, int noOfDays, String clientName,int duration) {
+		super(adversitmentId, priority, noOfDays, clientName);
+		 this.duration=duration;
+	}
+	  
+	  
+	 
+	   
+	   
+	
+	     
+}
+
+
+

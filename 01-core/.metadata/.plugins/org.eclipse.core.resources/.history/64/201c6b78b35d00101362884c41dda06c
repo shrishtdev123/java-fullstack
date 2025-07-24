@@ -1,0 +1,15 @@
+package com.hcl.adversitment;
+
+public class Test {
+	
+	     public static void main(String[] args) 
+	     {
+	    	 
+	    	 
+	    	 videoAdverstiemnt v=new videoAdverstiemnt(1,"first",4,"shrisht dev",5);
+	    	 
+	    	  System.out.println(v.getName());
+			
+		}
+
+}

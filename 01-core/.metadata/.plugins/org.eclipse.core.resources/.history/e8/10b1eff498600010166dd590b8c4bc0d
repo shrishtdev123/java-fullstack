@@ -1,0 +1,56 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Collection {
+	
+	
+	
+	  public static List<String> getCountryl() {
+		  
+		  
+		     List<String> ans=new ArrayList<>();
+		     
+		        ans.add("india");
+		        ans.add("usa");
+		        ans.add("japan");
+		        ans.add("china");
+		        ans.add("korea");
+		        
+		        return ans;
+		        
+		  
+	  }
+	
+	  public static void main(String[] args)
+	  {
+		  
+
+         List<Integer> ans=new ArrayList<>();
+             ans.add(3);
+             ans.add(5);
+
+           
+      // with help of Iterator we can get the collection object one by one 
+     // we can write and read both in the case of iterator 
+              Iterator<Integer> i1=ans.iterator();
+//              
+//              while(i1.hasNext()) {
+//            	  
+//            	  System.out.println(i1.next());
+//              }
+    
+              
+              List<String> result=getCountryl();
+            
+                 System.out.println(result);
+             
+		   
+		   
+		   
+		
+	}
+
+}

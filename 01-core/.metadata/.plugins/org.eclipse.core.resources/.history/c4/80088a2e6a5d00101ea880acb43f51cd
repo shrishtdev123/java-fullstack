@@ -1,0 +1,27 @@
+package com.hcl.abstractclass;
+
+public class Abstract {
+	
+	   public static void main(String[] args) {
+		
+		   Product p=new Product();
+		     p.show();
+	}
+
+}
+
+
+
+ abstract class Service{
+	
+	  public abstract void show();
+}
+
+class Product implements Service{
+	
+	 public void show() {
+		 
+		   System.out.println("product service is showing");
+		   
+	 }
+}

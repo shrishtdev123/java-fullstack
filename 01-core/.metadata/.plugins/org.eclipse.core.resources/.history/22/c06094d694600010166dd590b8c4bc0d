@@ -1,0 +1,30 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+
+public class Collection {
+	
+	  public static void main(String[] args)
+	  {
+		  
+
+          ArrayList<Integer> ans=new ArrayList<>();
+             ans.add(3);
+             ans.add(5);
+
+             ans.add(5);
+             
+             
+             System.out.println(ans);
+             
+             for(int a:ans) {
+            	 System.out.println(a);
+             }
+             
+		   
+		   
+		   
+		
+	}
+
+}

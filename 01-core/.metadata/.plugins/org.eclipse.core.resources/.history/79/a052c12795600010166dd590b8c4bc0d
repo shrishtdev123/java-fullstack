@@ -1,0 +1,26 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+
+public class Collection {
+	
+	  public static void main(String[] args)
+	  {
+		  
+
+          ArrayList<Integer> ans=new ArrayList<>();
+             ans.add(3);
+             ans.add(5);
+
+             ans.add(5);
+             
+             ans.add("shrisht dev");
+             System.out.println(ans);
+             
+		   
+		   
+		   
+		
+	}
+
+}

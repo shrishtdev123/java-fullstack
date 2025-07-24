@@ -1,0 +1,53 @@
+package com.Encapsulation;
+
+
+
+// the process of combining data member and method into a single unit ,is called encapsulation 
+// the main objective of ecaspulation is data hiding ,to sequrity purpose
+
+
+public class Encaspulation {
+	
+	    public static void main(String[] args) {
+	    	
+	    	   System.out.println("this is Encaspulation");
+	    	   Area a=new Area(3,5);
+	    	   Area a1=new Area(3,5);
+	    	   Area a2=new Area(3,5);
+	    	   
+	    	   System.out.println(a.area());
+	    	   
+	    	  
+	    }
+	    
+	   
+
+}
+
+
+class Area{
+	
+	  int l;
+	  int b;
+	  static int x=0;
+	  Area(int l,int b){
+		   this.l=l;
+		   this.b=b;
+		   x++;
+		  
+	  }
+	  
+	  
+	  public int area() {
+		  return l*b;
+	  }
+}
+
+
+
+
+   
+ 
+
+
+

@@ -1,0 +1,77 @@
+package com.hcl.AccountInterface;
+
+import java.util.Scanner;
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+
+
+		  Scanner sc=new Scanner(System.in);
+		  
+		  while(true) {
+			  
+			  
+			  System.out.println("1.Saving Account");
+			  System.out.println("2.Current Account");
+			  System.out.println("3.Quit");
+			  
+			  System.out.println("Enter your choice");
+			  int ch=sc.nextInt();
+			  
+			  if(ch==1) {
+				  
+				    System.out.println("Enter Account Number");
+				    String acconutNumber=sc.next();
+				    
+				    System.out.println("Enter Account CustomerName");
+				    String name=sc.next();
+				    
+				    System.out.println("Enter Account Balance ");
+				    double balance=sc.nextDouble();
+				    System.out.println("Enter no of Years");
+				    int years=sc.nextInt();
+				    
+				    MaintanceCharge a=new SavingAccount(acconutNumber,name,balance);
+				    
+				     System.out.println("Customer Name:"+name);
+				     System.out.println("Acconut Number"+acconutNumber);
+				     System.out.println("Acconut Balance"+balance);
+				    
+				     System.out.println("MaintanceCharge of Saving Account is:"+a.calculateMaintance(years));
+				    
+				    
+			  }
+			  else if(ch==2) {
+				  
+				  System.out.println("Enter Account Number");
+				    String acconutNumber=sc.next();
+				    
+				    System.out.println("Enter Account CustomerName");
+				    String name=sc.next();
+				    
+				    System.out.println("Enter Account Balance ");
+				    double balance=sc.nextDouble();
+				    
+				    System.out.println("Enter no of Years");
+				    int years=sc.nextInt();
+				    
+				    
+				    MaintanceCharge a=new CurrentAccount(acconutNumber,name,balance);
+				    
+				     System.out.println("Customer Name:"+name);
+				     System.out.println("Acconut Number:"+acconutNumber);
+				     System.out.println("Acconut Balance:"+balance);
+				    
+				     System.out.println("MaintanceCharge of Current Account is:"+a.calculateMaintance(years));
+			  }
+			  else if(ch==3) {
+				      System.out.println("Excution is completed");
+				    System.exit(0);
+			  }
+			  
+		  }
+
+	}
+
+}

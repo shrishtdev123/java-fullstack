@@ -1,0 +1,5 @@
+package com.hcl.Inheritance;
+
+public class BankAccount {
+
+}
