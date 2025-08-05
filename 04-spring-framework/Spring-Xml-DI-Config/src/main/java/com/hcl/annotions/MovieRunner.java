@@ -17,7 +17,5 @@ public class MovieRunner {
 	          System.out.println(xt.toString());
 	          
 	    	
-	    	
-	    	
 		}
 }

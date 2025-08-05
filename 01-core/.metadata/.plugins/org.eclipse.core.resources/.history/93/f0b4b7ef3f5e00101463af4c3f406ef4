@@ -1,5 +1,0 @@
-package com.hcl.AccountInterface;
-
-public interface MaintanceCharge {
-
-}

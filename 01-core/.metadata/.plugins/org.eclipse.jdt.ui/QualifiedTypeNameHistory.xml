@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.hcl.circle.Predicate"/>
+    <fullyQualifiedTypeName name="com.hcl.circle.Consumer"/>
 </qualifiedTypeNameHistroy>

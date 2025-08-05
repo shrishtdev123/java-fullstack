@@ -1,7 +1,0 @@
-package com.hcl.vehicle;
-
-public interface IPublicTransport {
-	
-	  
-
-}

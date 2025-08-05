@@ -11526,3 +11526,698 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.internal.Mav
 	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createProjectBuild(ClasspathUtil.java:252)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:146)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-07-24 22:23:47.305 -----------------------------------------------
+eclipse.buildId=4.35.0.202504180233
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-24 22:23:52.196
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+!SESSION 2025-07-24 22:23:47.397 -----------------------------------------------
+eclipse.buildId=4.35.0.202504180233
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-24 22:23:52.439
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-24 22:23:52.757
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (328) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-24 22:23:52.918
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (328) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-24 22:24:19.658
+!MESSAGE Logback config file: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-24 22:24:20.457
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-24 22:24:20.457
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-24 22:24:21.057
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-24 22:24:21.058
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-07-24 22:24:25.682
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\shrisht.dev'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-07-24 22:24:45.664
+!MESSAGE Error occurred while deleting: /springorm/target/classes/META-INF
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/springorm/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:416)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\META-INF.
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\META-INF
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2025-07-24 22:24:45.666
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2025-07-24 22:24:45.666
+!MESSAGE Could not delete '/springorm/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:416)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\META-INF.
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\META-INF
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2025-07-24 22:24:45.666
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2025-07-24 22:24:45.666
+!MESSAGE Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\META-INF.
+!STACK 0
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\META-INF
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-07-24 22:24:45.685
+!MESSAGE Error occurred while deleting: /springorm/target/classes/com
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/springorm/target/classes/com'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:416)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\com.
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\com
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2025-07-24 22:24:45.686
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2025-07-24 22:24:45.686
+!MESSAGE Could not delete '/springorm/target/classes/com'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:416)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\com.
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\com
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2025-07-24 22:24:45.686
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2025-07-24 22:24:45.686
+!MESSAGE Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\com.
+!STACK 0
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\classes\com
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-07-24 22:24:46.152
+!MESSAGE Error occurred while deleting: /springorm/target/test-classes/com
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:314)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/springorm/target/test-classes/com'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:416)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:314)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\test-classes\com.
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\test-classes\com
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:314)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2025-07-24 22:24:46.155
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2025-07-24 22:24:46.156
+!MESSAGE Could not delete '/springorm/target/test-classes/com'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:416)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:314)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\test-classes\com.
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\test-classes\com
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:314)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2025-07-24 22:24:46.156
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2025-07-24 22:24:46.156
+!MESSAGE Could not delete: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\test-classes\com.
+!STACK 0
+java.nio.file.AccessDeniedException: C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\03-hibernet\springorm\target\test-classes\com
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1192)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:309)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:201)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:413)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:363)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:815)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1830)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:177)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:104)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:314)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:217)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.core.ui 4 0 2025-07-25 01:50:50.447
+!MESSAGE Failed to create project.
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Process exit value was 1073807364. Console printout:
+===============================================================
+[INFO] Scanning for projects...
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/mojo/maven-metadata.xml
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-metadata.xml
+Progress (1): 1.4/21 kBProgress (2): 1.4/21 kB | 1.4/14 kBProgress (2): 1.4/21 kB | 2.8/14 kBProgress (2): 2.8/21 kB | 2.8/14 kBProgress (2): 2.8/21 kB | 4.1/14 kBProgress (2): 4.1/21 kB | 4.1/14 kBProgress (2): 4.1/21 kB | 5.5/14 kBProgress (2): 5.5/21 kB | 5.5/14 kBProgress (2): 5.5/21 kB | 6.9/14 kBProgress (2): 5.5/21 kB | 8.3/14 kBProgress (2): 5.5/21 kB | 9.7/14 kBProgress (2): 5.5/21 kB | 11/14 kB Progress (2): 6.9/21 kB | 11/14 kBProgress (2): 6.9/21 kB | 12/14 kBProgress (2): 6.9/21 kB | 14/14 kBProgress (2): 6.9/21 kB | 14 kB   Progress (2): 8.3/21 kB | 14 kBProgress (2): 9.7/21 kB | 14 kBProgress (2): 11/21 kB | 14 kB Progress (2): 12/21 kB | 14 kBProgress (2): 14/21 kB | 14 kBProgress (2): 15/21 kB | 14 kBProgress (2): 17/21 kB | 14 kBProgress (2): 18/21 kB | 14 kBProgress (2): 19/21 kB | 14 kBProgress (2): 21 kB | 14 kB                              Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/mojo/maven-metadata.xml[90m (21 kB at 41 kB/s)[0m
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-metadata.xml[90m (14 kB at 29 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-archetype-plugin/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-archetype-plugin/maven-metadata.xml[90m (1.1 kB at 47 kB/s)[0m
+[INFO] 
+[INFO] [1m------------------< [0;36morg.apache.maven:standalone-pom[0;1m >-------------------[m
+[INFO] [1mBuilding Maven Stub Project (No POM) 1[m
+[INFO] [1m--------------------------------[ pom ]---------------------------------[m
+[INFO] 
+[INFO] [1m>>> [0;32marchetype:3.4.0:generate[m [1m(default-cli)[0;1m > [0;1mgenerate-sources[m @ [36mstandalone-pom[0;1m >>>[m
+[INFO] 
+[INFO] [1m<<< [0;32marchetype:3.4.0:generate[m [1m(default-cli)[0;1m < [0;1mgenerate-sources[m @ [36mstandalone-pom[0;1m <<<[m
+[INFO] 
+[INFO] 
+[INFO] [1m--- [0;32marchetype:3.4.0:generate[m [1m(default-cli)[m @ [36mstandalone-pom[0;1m ---[m
+[INFO] Generating project in Interactive mode
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0marchetype-catalog.xml
+Progress (1): 0/17 MBProgress (1): 0/17 MBProgress (1): 0/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 10.0/17 MBProgress (1): 10.0/17 MBProgress (1): 10.0/17 MBProgress (1): 10/17 MB  Progress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17 MB                      Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0marchetype-catalog.xml[90m (17 MB at 9.0 MB/s)[0m
+[INFO] Archetype repository not defined. Using the one from [org.apache.maven.archetypes:maven-archetype-quickstart:1.5] found in catalog remote
+[INFO] Using property: groupId = com.shrtist
+[INFO] Using property: artifactId = MavenJavaBaesdConfiguration
+[INFO] Using property: version = 0.0.1-SNAPSHOT
+[INFO] Using property: package = com.shrtist.MavenJavaBaesdConfiguration
+Confirm properties configuration:
+groupId: com.shrtist
+artifactId: MavenJavaBaesdConfiguration
+version: 0.0.1-SNAPSHOT
+package: com.shrtist.MavenJavaBaesdConfiguration
+ Y: 
+"===============================================================
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.m2e.core.ui.internal.archetype.ArchetypeGenerator.createArchetypeProjects(ArchetypeGenerator.java:164)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizard$3.doCreateMavenProjects(MavenProjectWizard.java:246)
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectJob$1.doCreateMavenProjects(AbstractCreateMavenProjectJob.java:51)
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:56)
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectJob.runInWorkspace(AbstractCreateMavenProjectJob.java:55)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.IllegalStateException: Process exit value was 1073807364. Console printout:
+===============================================================
+[INFO] Scanning for projects...
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/mojo/maven-metadata.xml
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-metadata.xml
+Progress (1): 1.4/21 kBProgress (2): 1.4/21 kB | 1.4/14 kBProgress (2): 1.4/21 kB | 2.8/14 kBProgress (2): 2.8/21 kB | 2.8/14 kBProgress (2): 2.8/21 kB | 4.1/14 kBProgress (2): 4.1/21 kB | 4.1/14 kBProgress (2): 4.1/21 kB | 5.5/14 kBProgress (2): 5.5/21 kB | 5.5/14 kBProgress (2): 5.5/21 kB | 6.9/14 kBProgress (2): 5.5/21 kB | 8.3/14 kBProgress (2): 5.5/21 kB | 9.7/14 kBProgress (2): 5.5/21 kB | 11/14 kB Progress (2): 6.9/21 kB | 11/14 kBProgress (2): 6.9/21 kB | 12/14 kBProgress (2): 6.9/21 kB | 14/14 kBProgress (2): 6.9/21 kB | 14 kB   Progress (2): 8.3/21 kB | 14 kBProgress (2): 9.7/21 kB | 14 kBProgress (2): 11/21 kB | 14 kB Progress (2): 12/21 kB | 14 kBProgress (2): 14/21 kB | 14 kBProgress (2): 15/21 kB | 14 kBProgress (2): 17/21 kB | 14 kBProgress (2): 18/21 kB | 14 kBProgress (2): 19/21 kB | 14 kBProgress (2): 21 kB | 14 kB                              Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/codehaus/mojo/maven-metadata.xml[90m (21 kB at 41 kB/s)[0m
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-metadata.xml[90m (14 kB at 29 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-archetype-plugin/maven-metadata.xml
+Progress (1): 1.1 kB                    Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-archetype-plugin/maven-metadata.xml[90m (1.1 kB at 47 kB/s)[0m
+[INFO] 
+[INFO] [1m------------------< [0;36morg.apache.maven:standalone-pom[0;1m >-------------------[m
+[INFO] [1mBuilding Maven Stub Project (No POM) 1[m
+[INFO] [1m--------------------------------[ pom ]---------------------------------[m
+[INFO] 
+[INFO] [1m>>> [0;32marchetype:3.4.0:generate[m [1m(default-cli)[0;1m > [0;1mgenerate-sources[m @ [36mstandalone-pom[0;1m >>>[m
+[INFO] 
+[INFO] [1m<<< [0;32marchetype:3.4.0:generate[m [1m(default-cli)[0;1m < [0;1mgenerate-sources[m @ [36mstandalone-pom[0;1m <<<[m
+[INFO] 
+[INFO] 
+[INFO] [1m--- [0;32marchetype:3.4.0:generate[m [1m(default-cli)[m @ [36mstandalone-pom[0;1m ---[m
+[INFO] Generating project in Interactive mode
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0marchetype-catalog.xml
+Progress (1): 0/17 MBProgress (1): 0/17 MBProgress (1): 0/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.1/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.2/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.3/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.4/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.5/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.6/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.7/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.8/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 0.9/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.0/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.1/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.2/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.3/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.4/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.5/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.6/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.7/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.8/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 1.9/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.0/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.1/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.2/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.3/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.4/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.5/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.6/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.7/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.8/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 2.9/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.0/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.1/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.2/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.3/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.4/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.5/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.6/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.7/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.8/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 3.9/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.0/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.1/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.2/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.3/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.4/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.5/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.6/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.7/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.8/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 4.9/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.0/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.1/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.2/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.3/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.4/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.5/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.6/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.7/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.8/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 5.9/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.0/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.1/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.2/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.3/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.4/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.5/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.6/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.7/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.8/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 6.9/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.0/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.1/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.2/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.3/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.4/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.5/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.6/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.7/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.8/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 7.9/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.0/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.1/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.2/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.3/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.4/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.5/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.6/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.7/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.8/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 8.9/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.0/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.1/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.2/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.3/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.4/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.5/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.6/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.7/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.8/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 9.9/17 MBProgress (1): 10.0/17 MBProgress (1): 10.0/17 MBProgress (1): 10.0/17 MBProgress (1): 10/17 MB  Progress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 10/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 11/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 12/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 13/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 14/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 15/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 16/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17/17 MBProgress (1): 17 MB                      Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0marchetype-catalog.xml[90m (17 MB at 9.0 MB/s)[0m
+[INFO] Archetype repository not defined. Using the one from [org.apache.maven.archetypes:maven-archetype-quickstart:1.5] found in catalog remote
+[INFO] Using property: groupId = com.shrtist
+[INFO] Using property: artifactId = MavenJavaBaesdConfiguration
+[INFO] Using property: version = 0.0.1-SNAPSHOT
+[INFO] Using property: package = com.shrtist.MavenJavaBaesdConfiguration
+Confirm properties configuration:
+groupId: com.shrtist
+artifactId: MavenJavaBaesdConfiguration
+version: 0.0.1-SNAPSHOT
+package: com.shrtist.MavenJavaBaesdConfiguration
+ Y: 
+"===============================================================
+	at org.eclipse.m2e.internal.launch.EclipseMavenLauncher$1.lambda$4(EclipseMavenLauncher.java:120)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.eclipse.m2e.internal.launch.EclipseMavenLauncher$1.launchesTerminated(EclipseMavenLauncher.java:107)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:481)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:646)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	... 1 more

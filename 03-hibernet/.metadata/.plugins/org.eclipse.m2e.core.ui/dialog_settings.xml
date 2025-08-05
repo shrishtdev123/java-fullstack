@@ -31,6 +31,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.shrtist.MavenJavaBaesdConfiguration"/>
 			<item value="com.shrtist"/>
 			<item value="com.shrtist.orm"/>
 			<item value="com.hcl.hospital"/>
@@ -43,6 +44,7 @@
 			<item value="com.hcl"/>
 		</list>
 		<list key="artifactId">
+			<item value="MavenJavaBaesdConfiguration"/>
 			<item value="springorm"/>
 			<item value="orm"/>
 			<item value="hospital"/>

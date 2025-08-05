@@ -6,6 +6,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\04-spring-framework\servlet"/>
+			<item value="C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\04-spring-framework\springmvc"/>
+			<item value="C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HCL_Training\04-spring-framework\Spring-Xml-DI-Config"/>
 			<item value="C:\Users\shrisht.dev\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\ORM\src\main\java\com\example\demo\OrmApplication.java"/>
 			<item value="C:\Users\shrisht.dev\OneDrive - HCL TECHNOLOGIES LIMITED\Desktop\HospitalManagement"/>
 		</list>
@@ -31,23 +34,18 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.shrtist"/>
-			<item value="com.shrtist.orm"/>
-			<item value="com.hcl.hospital"/>
-			<item value="com.hcl.Hospital"/>
 			<item value="com.hcl"/>
-			<item value="com.hcl.SpringDi"/>
+			<item value="Dev.loveDev"/>
+			<item value="Dev.Dev123"/>
 		</list>
 		<list key="groupId">
-			<item value="com.shrtist"/>
 			<item value="com.hcl"/>
+			<item value="Dev"/>
 		</list>
 		<list key="artifactId">
-			<item value="springorm"/>
-			<item value="orm"/>
-			<item value="hospital"/>
-			<item value="Hospital"/>
-			<item value="SpringDi"/>
+			<item value="spring-mvc-java-config"/>
+			<item value="loveDev"/>
+			<item value="Dev123"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
