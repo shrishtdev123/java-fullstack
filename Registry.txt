@@ -1,0 +1,35 @@
+
+video-3(Session-3)(Service Registry): 
+
+Service Registry:
+     1)it is a centralized Registry of all Micro Services of an Application
+     2) it collects each microservices information and maitains internally.
+     3) for implementing this we have Eureka Server provided Netflix.
+
+Service Registry application:
+---------------------------------
+1.Create new Spring Boot application Add Eureka Server Starter and finish it.
+
+2.Add an annotation in main Spring Boot application class level.//@EnableEurekaServer
+
+3.add port number 8761 for service registry application always.
+          
+            spring.application.name=amzon-service-registry
+            server.port=8761
+4.Start application :
+       
+          Started 8761 port number
+          but with some exception:
+  -> By defult service registry serve Application itself registering as a client appication own its own
+  -> In this case we can stop this default behaviour.
+       Stopping Registering its as client once again
+  
+ 
+5.Once Service registry Application started,we will get always a default UI portal
+          localhost:8761
+
+->by default our micro services are not going to register with Service Registery application
+->make our services aslo as discovery clients
+->
+
+
