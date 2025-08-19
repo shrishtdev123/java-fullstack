@@ -60,7 +60,8 @@ Example:
       
        Order class should exit in both class means data formate should be same 
 
-      
+  Note: x may be any things okay right means class ,wheather class name match in both class or not but attribute in the both class should be acceptable 
+        means Schema should be same so that we can access the data without any error okay right
 
         
      
