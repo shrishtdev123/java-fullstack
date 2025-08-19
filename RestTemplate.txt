@@ -1,0 +1,71 @@
+
+ Communication Between microservices:
+
+ 1.First way and more friendly:
+
+       ===RestTemplate====
+    1. if we want to establish communication between services then we should go for restTemplate 
+    2.RestTemplate is buildin class which contain several method to make http request from one service to other services
+    3.first we will create bean of RestTemplate then we autowired or use constructor for use of this where we need it
+      for getRequest:
+    4.if we want to getsome things from the other service into other service then we should use getForObject(url,x.class) method
+    5.it contain two parameter first is url means endpoint from where we want to fetch data and second is the type casting type means in which formate data is comming:
+   
+   
+   ===Post request ======
+
+    if we want to send some data from one service to other then we should go for postForEntity(url,requestBody,x.class) method 
+    this method contain three parameter which is very important and always need ,first is the url ,second is data which we want to send and third is 
+    typecasting means in which formate we are sending data
+
+ ====Put request=====
+   if we want to update some things from Service A to Service B then we should go for put(url,body) 
+
+=====Delete request=====
+   if we want to delete then we should go for delete Method of restTemplate okay right 
+
+
+all the above method used to send the request in the from of curd okay right 
+
+===Step to create RestTemplate Bean=====
+
+ 1.  @Bean
+   public RestTemplate restTemplate(){
+   
+         return new RestTemplate ();
+    }
+
+
+ 2. now where you want to use this we have to use Autowired to use the above method which we disccuss okay right
+
+ 
+Example:
+    Let us consider we have two services order and payment okay right,they are run on the differnet port number say 8001 and 8002 respectively
+   
+    inside the order service we have endpoint like that 
+     localhost:8001/create-order, method is post which is used to crerate order 
+   
+     when some hite this particular link then a new order is created okay right after the order created we have to call the payment service right 
+
+    step to from order to payment:
+     1.hite the  localhost:8001/create-order ,order is created 
+     2.save in the database order
+     3.now we want to provide the payment service to the user ,so we call the payment service 
+         
+        step to call the payment service:
+        1.create the bean of RestTemplate 
+        2.use the RestTemplate object to use the method 
+    
+       Paymeny payment=restTemplate.postEntity(url,body,Order.class)
+      
+       Order class should exit in both class means data formate should be same 
+
+      
+
+        
+     
+      
+    
+          
+
+  
