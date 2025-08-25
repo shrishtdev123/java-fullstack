@@ -22,7 +22,7 @@ public class TestController {
 		   // first we create the object of RestTemplate
 		  
 		  
-		   
+		    
 		    String user=restTemplate.getForObject("http://localhost:8001/user/login", String.class);
 		    String order=restTemplate.getForObject("http://localhost:8002/order/order", String.class);
 		    
