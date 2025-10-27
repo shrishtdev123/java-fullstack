@@ -1,0 +1,304 @@
+
+
+=================Day01=====================
+
+     Docker : 
+
+        if we want to common runtime en where we can run any things without installing any software and depenecey for a particular technology then we should go for docker 
+
+ => the main objective of docker is Contenerization 
+
+=> here we have to learn this topic 
+=> dockerFile => where we write the instruction about the software and dependecy whcih is required for particular technology 
+
+=> Docker image=> when we combine app code + software dependency into single unite for excution then it is called 
+                   docker image 
+=> docker container : when we run docker image then a container is created for the excution of our application ,
+                      this container is nothing but docker container (box)
+                     when we run docker image multiple times then multiple docker container will created 
+                     in the different enmt
+
+   ==========Flow of Docker Process===========
+
+     
+       Dokcer File=>build=>docker image=> docker run => docker container 
+
+
+         ====== Some Imp to Commond to Know before going to Leran Docker ==============
+
+          1.Docker images: you know some time our requirement to know about all the imges,to s ee all 
+                           the images we used Docker images
+
+                       commond :   docker images 
+         2.docker build -t x:if we want to create image then we have to use this commond in docker 
+                            where build is used for creation 
+                            -t means tage name 
+                             x means name of image which is provided by programmer
+         3.docker run -p 8080(host port):8080(container port) x:if we want to run image then we have to use this commond 
+                                 where -p means portmapping 
+                                    x name of image which is provided by programmer
+                                        (Run container)
+                            => if we used this commond then we are able to see logs also here 
+         4.docker run -d -p 8080:8080 x:if we want to run image then we have to used this commond 
+                                        where -p means portmapping
+                                           x name of image which is provided by programmer
+                                           -d ditach mode means our application would be run in background
+                                             (demond thread)
+         5.docker ps :see running container
+           and if we want to all container which is running and stoped one then we use docker ps -a
+         6.docker logs <id>:Views logs 
+         7.docker stope <id> Stope container
+         8.docker rm <id>:remove container
+         9.docker rmi myapp:remove image
+                           
+
+
+      =========================Day02=================================
+
+       
+         =============
+           Dockerfile
+         =============
+                
+            => it contains instructions to build docker image 
+            => we will specify application dependencies here
+       =========================     
+        Dockerfile Keywords
+       =========================
+        1.FROM
+        2.MAINTATNER
+        3.COPY
+        4.RUN
+        5.CMD
+        6.EXPOSE
+        7.WORKDIR
+        8.ENTRYPOINT
+
+         ========
+          FROM
+         ========
+
+             => it is used to specify base image required for our application.
+              
+                    FROM :jdk11
+
+                    FROM :tomcate8.5
+                    
+                    FROM :mysql8.5
+             
+                    FROM :node-19
+
+       =============
+        MAINTATNER
+       =============
+            => it used tell the author of Dockerfile
+        MAINTATNER <Shrisht dev>
+
+      =============
+        COPY
+      =============
+      
+       =>it is used to copy the files from host machine to container machine.
+
+        COPY <src> <dest>
+  
+        COPY target/app.jar  /usr/app/tomcat/app.jar
+             (source location)  (destination location)
+
+     ====================
+         RUN (build)
+     ====================
+          
+       => it is used to execute instruction while creating docker image.
+
+             RUN 'sudo yum install git'
+             
+             RUN 'sudo yum install maven'
+ 
+             RUN 'git clone <repo>'
+
+      Note:we can run write run instructions in dockerfile and they will be processed from top to bottom
+
+     ================
+      CMD/ENTRYPOINT (run)
+     ================
+
+     => it is used to excute the instrcutions while creating docker container
+                    
+            CMD 'java -jar <jar-file>'or ["java","-jar","<jar-file>"]
+
+   Note: if we write the multiple CMD instructions docker will process only last CMD instrcution.
+
+    ====================== 
+       EXPOSE
+    ======================
+         
+       => it is used to specify container port number
+
+            EXPOSE 8080 
+
+   =======================
+      WORKDIR
+   ======================= 
+
+    => it is used to specify  working directroy(path change)
+      
+         WORKDIR /usr/app/
+  
+    
+    ==========================
+
+     vi Dockerfile
+    ==========================
+
+      1 if we want to write docker file commond then we have to use this commond ,it will open new terminal ,after that we have to press i and then enter to 
+        to write the docker commond ,means that how to write the things in dockerfile
+
+
+        
+      FROM ubuntu
+      MAINTATNER <sHRISHT DEV>
+      RUN echo 'run hello msg -1'
+      
+      RUN echo 'run msg-2 '
+ 
+      CMD echo 'cmd msg-1'
+      CMD echo 'cmd msg-2' 
+
+      :wq to save file we use this commond 
+
+   
+     => if we want to see contenet from the Dockerfile then we  have to used cat commond 
+             cat Dockerfile
+           output: content of Dockerfile
+
+
+      ====Creation of Docker image ============
+       
+          docker build -t <image name> .
+           here . represent current working directory and -t means tag
+
+       docker build -t app1 .
+
+      
+
+     ============creating other dockerfile withother file name===================
+
+        vi shrishtdockerfile
+
+
+         FROM ubuntu
+         RUN echo 'run msg1'
+         CMD echo 'cmd msg2'
+  
+         docker build -t app2 -f shrishtdockerfile
+
+     ==========================================================================
+
+
+     -----------how to push image in the docker hub --------------------
+
+          == image creation ==
+       docker build -t user_name_of_docker_hub/app201 .
+
+      docker build -t shrisht/app202 .
+                   
+   
+       1. docker login 
+            username:shrishtdev
+            password:1234
+       2. if once logic then push our created image into docker hub 
+              
+             docker push image_name
+             docker push shrisht/app202
+
+      
+     
+        =========== version=============
+
+           shrisht/app201:v1
+           shrisht/app201:v2
+
+           shrisht/app201:latest
+
+           docker pull shrisht/app201-> it will download the latest image 
+
+           docker pull shrisht/app201:v1 -> it will download the image of version1 v1 
+
+
+
+             
+
+     -------------Dockerfile for Java  Web App(no springboot)-------------
+
+      FROM tomcate-jre:9.5
+      MAINTATNER <Shrishtdev>
+
+      EXPOSE 8080
+     
+      COPY target/app.war /usr/app/tomcate/webapps/
+
+   -----------------------------------------------------------------------
+
+      
+
+     -------------Dockerfile for Sprinboot Application-------------
+
+      FROM openjdk:17
+      MAINTATNER <Shrishtdev>
+
+      EXPOSE 8080
+     
+      COPY target/sbapp.jar /usr/app/
+      WORKDIR /usr/app
+
+      ENTRYPOINT ["java","-jar","sbapp.jar"]
+
+   -----------------------------------------------------------------------
+
+      
+
+   ==========Dockerizing Springboot Application=================
+
+     
+   1) Install git client in host vm and clone repo
+
+          $ sudo yum install git
+          $ git <reppo-url>
+  2) Install maven in host vm
+        
+         $ sudo yum install maven
+  3) go to project directory and perform maven build
+
+         $ cd <dir-name>
+        $ mvn clean package
+
+ 4) Build docker image
+
+      $ docker build -t shrisht/sbapp
+
+ 5) Run Docker container using docker image
+        
+          $ docker run -d -p 8080:8080 shrisht/sbapp
+ 6) Enable host port in sequrity group
+
+ 7)Access application in browser
+
+
+
+
+
+
+
+
+
+
+  ======================= Day03(Docker compose)==========================
+      
+         
+
+
+
+
+
+
