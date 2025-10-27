@@ -1,0 +1,124 @@
+
+
+ 
+      =================Note All Lecture Notes form to 1 to 6 see later===============
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+==========================Session 07(MicroService Communication)================
+
+ 
+  ==> Enable Communication ,between two or more microService 
+
+====================================
+ 1.RestTemplate class and Object: 
+====================================
+     it is class provided by spring ,we create object and call the service 
+
+         RestTemplate restTemplate=new RestTemplate();
+
+        
+        ResponsEntity<responseBody>  responsEntity=restTemplate.exchange(url,HttpMethod.Methodname,requestBody,responseBody.class);
+
+    challenge:
+         we have to tell each and every things by mannually ,such as methodname,requestbody,responseType , so overcome these problem 
+         we should go for other way ,that way is nothings but FeinClient which is provided by Spring cloud 
+
+   Spring Cloud: Provide a simplified concept to enable Micro Service Communication:
+
+================
+  Feign Client:
+ ===============
+    Declarative Approach
+  
+           Declare:Rest FM will take care
+
+   -> Feign Client are webclient to make API communication
+   -> Feign Client ,we can integaret with Service Discovery internally.
+   -> load balancing 
+
+
+Implementation
+---------------
+
+order->payment
+
+1.consumer application should be enabled with Feign Client functionality.
+
+        <Add a maven Depenecdny>OpenFiegn
+
+2.Add an annotation called @EnableFeignClient in main Spring Boot Application at class level
+
+3.Create Feign Client interface:
+
+    which Micro Service API ,we are calling ,for that specific MS ,we have to create an individual Feign client Interface.
+    
+
+   -> When we added @FeignClient annotation on interface ,that will be consider as Feign Client
+
+      @FeignClient
+      public interface PaymentMicroServiceFeignClient{
+
+
+     }
+
+4.Now please provide producer micro service ID inside @FeignClient as value
+
+      @FeignClient(value="payment-service")
+      public interface PaymentMicroServiceFeignClient{
+
+
+     }
+ 
+
+5.Create an Abstract method inside interface ,that method return type should be similar response of API call.
+
+     -> if that api is having Request Body ,define compatible java class as a method argument
+
+     ->Define an endpoint URl of API in the formate of Request mapping Annotation.
+
+         @FeignClient(value="payment-service")
+      public interface PaymentMicroServiceFeignClient{
+
+              @GetMapping("/payment/option")
+              reponseType getPaymentOption();
+                  
+             
+     }
+ 
+6. Now Use the Reference variable of feign client interface to call the method ,where it is required in the application ar per need 
+
+    ->Inject /Autowired the feign client in service class and call the resptective method where it is need.
+             
+              @Autowired
+              PaymentMicroServiceFeignClient feignClient;
+
+             use feignClient object to call the method of this interface as per nedd.
+
+
+
+
+
+           RestTemplate or Feign Client
+
+           Feign Client:API communication in b/w your own micro services
+           
+           RestTemplate: if we have third party API ,and we want to call them ,then we have to use RestTemplate only.
+
+           hence ,we can say that it depened on our requirement ,weather we have to use Feign cleint or RestTemplate 
+          
+ Note: RestTemplate and Feign Client is ment for Synchronus Communication.
+
+ --> if want to enable Asynchronus Communication then we should go for WebClient and other message Broker such as Kafka Streaming 
+      which is ment for continous Streaming 
+
